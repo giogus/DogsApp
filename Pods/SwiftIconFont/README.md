@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftIconFont.svg?style=flat)](http://cocoapods.org/pods/SwiftIconFont)
 [![Platform](https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-green.svg)](http://cocoapods.org/pods/SwiftIconFont)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 ## Installation
 
@@ -51,24 +52,26 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 | Font         | Prefix | Cheat Sheet                               |
 |--------------|--------|-------------------------------------------|
-| Font Awesome | fa:    | [List](http://fontawesome.io/cheatsheet/) |
+| Font Awesome | fa:    | [List](http://fontawesome.io/icons/) |
 | Ion Icons    | io:    | [List](http://ionicons.com)               |
 | Octicons     | oc:    | [List](https://octicons.github.com)       |
 | Open Iconic  | ic:    | [List](https://useiconic.com/open/)       |
 | Material Icon   | ma:    | [List](https://design.google.com/icons/)       |
 | Themify   | ti:    | [List](https://themify.me/themify-icons)       |
 | Map Icons   | mi:    | [List](http://map-icons.com)       |
+| Segoe MDL2   | sm:    | [List](https://docs.microsoft.com/en-us/windows/uwp/design/style/segoe-ui-symbol-font)       |
 
 ## Fonts
 ````swift
 public enum Fonts: String {
-    case FontAwesome = "FontAwesome"
-    case Iconic = "open-iconic"
-    case Ionicon = "Ionicons"
-    case Octicon = "octicons"
-    case Themify = "themify"
-    case MapIcon = "map-icons"
-    case MaterialIcon = "MaterialIcons-Regular"
+    case fontAwesome = "FontAwesome"
+    case iconic = "open-iconic"
+    case ionicon = "Ionicons"
+    case octicon = "octicons"
+    case themify = "themify"
+    case mapIcon = "map-icons"
+    case materialIcon = "MaterialIcons-Regular"
+    case segoeMDL2 = "Segoe mdl2 assets"
 }
 ````
 
@@ -103,7 +106,7 @@ The lazy way, just set your UILabel, UITextField, UIButton, UITextView, UIBarBut
 ````swift
 import SwiftIconFont
 
-label.font = UIFont.icon(from: .FontAwesome, ofSize: 50.0)
+label.font = UIFont.icon(from: .fontAwesome, ofSize: 50.0)
 label.text = String.fontAwesomeIcon(code: "twitter")
 ````
 
@@ -113,7 +116,7 @@ label.text = String.fontAwesomeIcon(code: "twitter")
 ````swift
 import SwiftIconFont
 
-twitterBarButton.icon(from: .FontAwesome, code: "twitter", ofSize: 20)
+twitterBarButton.icon(from: .fontAwesome, code: "twitter", ofSize: 20)
 ````
 
 #### UITabBarItem (Without Custom Class)
@@ -121,7 +124,24 @@ twitterBarButton.icon(from: .FontAwesome, code: "twitter", ofSize: 20)
 ````swift
 import SwiftIconFont
 
-twitterTabBarButton.icon(from: .FontAwesome, code: "twitter", imageSize: CGSizeMake(20, 20), ofSize: 20)
+twitterTabBarButton.icon(from: .fontAwesome, code: "twitter", imageSize: CGSizeMake(20, 20), ofSize: 20)
+````
+
+#### UIImage
+
+````swift
+import SwiftIconFont
+
+let githubLogo = UIImage(from: .octicon, code: "logo-github", textColor: .black, backgroundColor: .clear, size: CGSize(width: 150, height: 50))
+````
+
+#### UIImageView
+
+````swift
+import SwiftIconFont
+
+let githubLogoImageView: UIImageView = UIImageView(frame: CGRect(x: 120, y: self.view.frame.size.height - 130, width: 150, height: 50))
+githubLogoImageView.setIcon(from: .octicon, code: "logo-github", textColor: .black, backgroundColor: .clear, size: nil)
 ````
 
 ## Author

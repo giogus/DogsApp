@@ -27,7 +27,7 @@ final class BreedImagesControllerView: UIView {
     lazy fileprivate var loading: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView(frame: .zero)
         view.hidesWhenStopped = true
-        view.activityIndicatorViewStyle = .gray
+        view.style = .gray
         return view
     }()
     
