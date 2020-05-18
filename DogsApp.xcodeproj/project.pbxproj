@@ -233,7 +233,6 @@
 				0AAD7D951FE02B160048E7A2 /* Frameworks */,
 				0AAD7D961FE02B160048E7A2 /* Resources */,
 				4C88A1E1D6D639C4669EFC37 /* [CP] Embed Pods Frameworks */,
-				E074A64F0BDF0D0F49248AE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,7 +252,6 @@
 				0AAD7DAB1FE02B160048E7A2 /* Frameworks */,
 				0AAD7DAC1FE02B160048E7A2 /* Resources */,
 				DD83F788B6C0D3D0E1F582FA /* [CP] Embed Pods Frameworks */,
-				1D3FC401F7BBF4F0E5092E31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,28 +325,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D3FC401F7BBF4F0E5092E31 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogsAppTests/Pods-DogsAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4C88A1E1D6D639C4669EFC37 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DogsApp/Pods-DogsApp-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DogsApp/Pods-DogsApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
@@ -365,7 +348,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogsApp/Pods-DogsApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DogsApp/Pods-DogsApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8A0F43655A0F6A6A01CD78CA /* [CP] Check Pods Manifest.lock */ = {
@@ -410,7 +393,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DogsAppTests/Pods-DogsAppTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DogsAppTests/Pods-DogsAppTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
@@ -425,22 +408,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogsAppTests/Pods-DogsAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E074A64F0BDF0D0F49248AE3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogsApp/Pods-DogsApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DogsAppTests/Pods-DogsAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
