@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class FavoriteDogsViewController: UIViewController {
+class FavoriteDogsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var datasource: FavoritesDatasource?
